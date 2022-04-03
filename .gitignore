@@ -6,3 +6,4 @@ build/
 reports/
 .pytest_cache
 .git
+.idea
