@@ -1,7 +1,7 @@
 # IPFS
 IPFS(InterPlanetary File System，星际文件系统），它是一种全新的超媒体文本传输协议，可以把它理解为一种支持分布式存储的网站
 
-资料: [ipfs PPT.pdf](资料)
+资料: [ipfs PPT.pdf](ipfs PPT.pdf)
 
 # IPNS 服务
 ```bash
