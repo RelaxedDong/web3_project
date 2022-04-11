@@ -7,28 +7,15 @@ from brownie import accounts, SimpleStorage
 
 def main():
     """
-    (tornado_env) ☁  first_demo  brownie run scripts/deploy_test.py
-    Brownie v1.18.1 - Python development framework for Ethereum
-
-    FirstDemoProject is the active project.
-
     Running 'scripts/deploy_test.py::main'...
-    0xa1eF58670368eCCB27EdC6609dea0fEFC5884f09
-    (tornado_env) ☁  first_demo  brownie run scripts/deploy_test.py
-    Brownie v1.18.1 - Python development framework for Ethereum
-
-    FirstDemoProject is the active project.
-
-    Running 'scripts/deploy_test.py::main'...
-    0xa1eF58670368eCCB27EdC6609dea0fEFC5884f09
-    Transaction sent: 0xb2477aefdbb15e8bcbb73b325fd57d2469bab143cb06d5193ad4581ff8b16b71
-      Gas price: 2.0 gwei   Gas limit: 114381   Nonce: 3
-      SimpleStorage.constructor confirmed   Block: 4   Gas used: 103983 (90.91%)
-      SimpleStorage deployed at: 0xCe4A2940Be7f55041dEBF2473283b141c0872731
+    0x7EA4768607dc17fb9CfF6d4d7c3d2E3aDDb1ED8e
+    Transaction sent: 0xa54cae745d229ea7fcc8cf8c19faa951afc6fdd2586f6bac5435c3c1ee325609
+      Gas price: 20.0 gwei   Gas limit: 114381   Nonce: 0
+      SimpleStorage.constructor confirmed   Block: 1   Gas used: 103983 (90.91%)
+      SimpleStorage deployed at: 0xf59084dDbcCf922664ae77D05023Ea58763c74fC
     :return:
     """
-
-    acct = accounts.at('0xa1eF58670368eCCB27EdC6609dea0fEFC5884f09')
+    acct = accounts.at('0x07112Cb0369d50E908d9F3086FB9b236Af6e39B9')
     print(acct)
     mytest = SimpleStorage.deploy(
         {"from": acct}

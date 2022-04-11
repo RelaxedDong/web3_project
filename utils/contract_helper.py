@@ -5,8 +5,11 @@
 import json
 import pathlib
 
+from web3 import Web3
 
 DEFAULT_ABI_JSON_FILE_PATH = '../build/contracts'
+w3_client = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))
+DEFAULT_ACCOUNT = '0x07112Cb0369d50E908d9F3086FB9b236Af6e39B9'
 
 
 def get_contract_abi(contract_name: str, abi_dir=DEFAULT_ABI_JSON_FILE_PATH):
