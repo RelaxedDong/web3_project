@@ -8,6 +8,20 @@ contract my_erc20 is IERC20 {
     uint256 private _totalSupply;
     mapping(address => uint256) _balances;
     mapping(address => mapping(address => uint256)) _approve;
+
+    //函数返回代币的名称 - 如 "MyToken" 或 "我的代币"
+    function name() public view returns (string) {
+        return "hah token";
+    }
+    // 函数返回代币的代号(通常为字母缩写)，如 "HIX"，"UPT"。
+    function symbol() public view returns (string) {
+        return "HHT";
+    }
+    // 返回令牌使用的小数位数 - 例如"8"，意味着将令牌量除以"100000000"以获取其用户表示形式。
+    function decimals() public view returns (uint8) {
+        return 18;
+    }
+
     function totalSupply() external view returns (uint256) {
         return _totalSupply;
     }
