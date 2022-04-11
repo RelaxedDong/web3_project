@@ -1,14 +1,9 @@
 pragma solidity ^0.8.0;
-import "OpenZeppelin/openzeppelin-contracts@4.5.0/contracts/math/SafeMath.sol";
+import "OpenZeppelin/openzeppelin-contracts@4.5.0/contracts/utils/math/SafeMath.sol";
 import "OpenZeppelin/openzeppelin-contracts@4.5.0/contracts/token/ERC20/IERC20.sol";
 
 contract my_erc20 is IERC20 {
     using SafeMath for uint256;
-        // transferFrom
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    // approve
-    event Approval(address indexed owner, address indexed spender, uint256 value);
 
     uint256 private _totalSupply;
     mapping(address => uint256) _balances;
@@ -25,7 +20,7 @@ contract my_erc20 is IERC20 {
     // msg.sender -> to 转 amount个token，返回bool
     // 会执行 Emits a {Transfer} event.
     function transfer(address to, uint256 amount) external returns (bool) {
-         return _transfer(from, to, amount);
+         return _transfer(msg.sender, to, amount);
     }
 
     // 获取 owner 授权给 spender 可使用的token数量
@@ -49,8 +44,8 @@ contract my_erc20 is IERC20 {
         return _transfer(from, to, amount);
     }
     // transferFrom、transfer都有使用，直接封装一下
-    function _transfer(address to, uint256 amount) internal returns (bool) {
-        _balances[msg.sender] = _balances[msg.sender].sub(amount);
+    function _transfer(address from, address to, uint256 amount) internal returns (bool) {
+        _balances[from] = _balances[from].sub(amount);
         _balances[to] = _balances[to].add(amount);
         emit Transfer(msg.sender, to, amount);
         return true;
