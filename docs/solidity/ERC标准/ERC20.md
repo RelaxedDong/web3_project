@@ -49,6 +49,8 @@ interface IERC20 {
 `contracts/Mintable.sol`
 
 # Burnable
+`contracts/Burnable.sol`
+
 
 # brownie 使用
 首先安装包管理：
