@@ -1,9 +1,10 @@
 # IPFS
 IPFS(InterPlanetary File System，星际文件系统），它是一种全新的超媒体文本传输协议，可以把它理解为一种支持分布式存储的网站
 
-资料: [ipfs PPT.pdf](ipfs PPT.pdf)
+参考资料: [ipfs PPT.pdf](ipfsPPT.pdf) 
+来源：[B站视频分享](https://www.bilibili.com/video/BV1fL4y187mS?from=search&seid=16590021780953099369&spm_id_from=333.337.0.0)
 
-# IPNS 服务
+# IPNS 如何处理目录CID变动？
 ```bash
 
 # 1. 生成ipns ID
@@ -26,7 +27,7 @@ Published to k2k4r8jvi71mdlgcz5z22i991zodwxen2xg5ogs8uxqwue9hx641fhrk: /ipfs/QmZ
 [root@iZt4na58hlqlij2bd6il00Z ~]# ipfs name publish --key=bca_test_3 QmRucJWpykcn85HkvPMNXU6qxroLVzTqRWjvemBfqcfXTc
 Published to k2k4r8jvi71mdlgcz5z22i991zodwxen2xg5ogs8uxqwue9hx641fhrk: /ipfs/QmRucJWpykcn85HkvPMNXU6qxroLVzTqRWjvemBfqcfXTc
 ```
-# IPFS Service remote add
+# Pinning Service
 ```bash
 # 添加pinata pinning-service:
 	ipfs pin remote service add pinata https://api.pinata.cloud/psa xxx(your tk)
