@@ -1,3 +1,5 @@
+# ERC20
+
 文档：
 https://learnblockchain.cn/docs/eips/eip-20.html#api-%E8%A7%84%E8%8C%83
 
@@ -50,29 +52,6 @@ interface IERC20 {
 
 # Burnable
 `contracts/Burnable.sol`
-
-
-# brownie 使用
-首先安装包管理：
-`brownie pm install OpenZeppelin/openzeppelin-contracts@4.5.0`
-
-查看已安装包：
-```bash
->> brownie pm list
-Brownie v1.18.1 - Python development framework for Ethereum
-
-The following packages are currently installed:
-
-OpenZeppelin
- └─OpenZeppelin/openzeppelin-contracts@4.5.0
-```
-clone 到当前目录
-```solidity
->> brownie pm clone OpenZeppelin/openzeppelin-contracts@4.5.0 
-Brownie v1.18.1 - Python development framework for Ethereum
-
-SUCCESS: Package 'OpenZeppelin/openzeppelin-contracts@4.5.0' was cloned at OpenZeppelin/openzeppelin-contracts@4.5.0
-```
 
 
 
