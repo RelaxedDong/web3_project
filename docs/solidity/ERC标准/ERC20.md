@@ -44,6 +44,12 @@ interface IERC20 {
 
 }
 ```
+# Mintable
+
+`contracts/Mintable.sol`
+
+# Burnable
+
 # brownie 使用
 首先安装包管理：
 `brownie pm install OpenZeppelin/openzeppelin-contracts@4.5.0`
@@ -65,3 +71,6 @@ Brownie v1.18.1 - Python development framework for Ethereum
 
 SUCCESS: Package 'OpenZeppelin/openzeppelin-contracts@4.5.0' was cloned at OpenZeppelin/openzeppelin-contracts@4.5.0
 ```
+
+
+
