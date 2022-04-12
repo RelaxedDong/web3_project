@@ -9,6 +9,8 @@ https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/tok
 
 > Erc-20 代币是以太坊代币的子集，这些所有代币通过Erc-20标准能够让以太坊区块链上的其他智能合约和去中心化应用之间无缝交互。
 
+![img_1.png](img_1.png)
+
 ```solidity
 pragma solidity ^0.8.0;
 
