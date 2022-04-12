@@ -1,3 +1,16 @@
+官方文档： https://eth-brownie.readthedocs.io/en/latest/install.html
+
+python3 -m pip install --user pipx
+
+python3 -m pipx ensurepath
+
+pipx install eth-brownie
+
+依赖：
+
+python3 version 3.6 or greater, python3-dev
+ganache-cli(用于测试和开发的快速以太坊RPC客户端) - tested with version 6.12.2 
+
 # 安装包管理
 `brownie pm install OpenZeppelin/openzeppelin-contracts@4.5.0`
 
