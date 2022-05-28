@@ -1,0 +1,1 @@
+https://docs.soliditylang.org/en/v0.8.14/layout-of-source-files.html#spdx-license-identifier
