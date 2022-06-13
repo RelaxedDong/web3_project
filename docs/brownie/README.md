@@ -76,3 +76,9 @@ brownie accounts delete donghao
 测试单个文件: `brownie test -q test_class.py`
 
 排查错误：`brownie test --pdb` 当有 error时，可以通过进入命令行查看对应的数据（相当于会断点到有error的那行代码）。
+
+# console
+`brownie console`
+
+# import 
+brownie无法识别npm安装的三方包

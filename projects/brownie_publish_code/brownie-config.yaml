@@ -1,0 +1,11 @@
+# https://eth-brownie.readthedocs.io/en/stable/config.html?highlight=dependencies
+dotenv: .env
+wallets:
+    from_key: ${PRIVATE_KEY}
+dependencies:
+    # - <organization/repo>@<version>
+    - OpenZeppelin/openzeppelin-contracts@4.4.0
+compiler:
+    solc:
+        remappings:
+            - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.4.0'

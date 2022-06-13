@@ -1,0 +1,10 @@
+# https://eth-brownie.readthedocs.io/en/stable/config.html?highlight=dependencies
+
+dependencies:
+    # - <organization/repo>@<version>
+    - smartcontractkit/chainlink@1.1.1
+compiler:
+    solc:
+        remappings:
+            - '@chainlink=smartcontractkit/chainlink@1.1.1'
+

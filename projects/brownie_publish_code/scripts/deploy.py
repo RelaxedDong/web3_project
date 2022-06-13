@@ -4,27 +4,15 @@
 # @Author  : donghao
 import os
 
-from brownie import accounts, config, SimpleStorage, network
+from brownie import accounts, config, NFT_GM, network
 
 
 def deploy_simple_storage():
     # 添加accounts方式：
     # local推荐：
     account = get_account()
+    NFT_GM.deploy({"from": account}, publish_source=True)
 
-    # test、线上推荐：
-    # account = accounts.load('donghao')
-    # print(account)
-
-    # account = accounts.add(os.getenv("PRIVATE_KEY"))
-    # print(account)
-
-    # account = accounts.add(config['wallets']['from_key'])
-    simple_storage = SimpleStorage.deploy({"from": account}, publish_source=True)
-    v = simple_storage.retrieve()
-    transaction = simple_storage.store(666, {"from": account})
-    transaction.wait(1)
-    updated_value = simple_storage.retrieve()
 
 
 def get_account():
