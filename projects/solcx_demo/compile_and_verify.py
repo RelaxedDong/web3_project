@@ -39,7 +39,7 @@ bytecode = "60806040523480156200001157600080fd5b506040518060400160405280600b8152
 # collect to ganache
 w3 = Web3(Web3.HTTPProvider('https://rinkeby.infura.io/v3/a047db24bb89483a87a1c1e8a136fa25'))
 my_address = "0x3Fef480B611d0adD76a4255f2aCEccbDb435E519"
-my_private_key = os.getenv("PRIVATE_KEY", "23ab4f8b0ba5fcb50bbb7d721b89d184e56030fcee02cf0ff4ecf5bdcef9b147")
+my_private_key = os.getenv("PRIVATE_KEY")
 print(my_private_key)
 
 myContract = w3.eth.contract(abi=abi, bytecode=bytecode)
