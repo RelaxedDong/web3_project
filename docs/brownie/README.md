@@ -86,3 +86,8 @@ brownie无法识别npm安装的三方包
 # networks
 创建网络：
 `brownie networks add Ethereum ganache-local host=http://127.0.0.1:8545`
+
+#### fork from alchemy
+```创建mainnet-fork网络 
+brownie networks add development mainnet-fork-dev cmd=ganache-cli host=http://127.0.0.1 fork=https://eth-mainnet.g.alchemy.com/v2/xxx accounts=10 mnemonic=brownie port=8545
+```
