@@ -1,5 +1,4 @@
 # https://eth-brownie.readthedocs.io/en/stable/config.html?highlight=dependencies
-
 dependencies:
     # - <organization/repo>@<version>
     - smartcontractkit/chainlink@1.1.1
@@ -7,4 +6,15 @@ compiler:
     solc:
         remappings:
             - '@chainlink=smartcontractkit/chainlink@1.1.1'
-
+dotenv: .env
+wallets:
+    from_key: ${PRIVATE_KEY}
+networks:
+    default: ganache-local # 默认是 development
+    rinkeby:
+        eth_use_price_feed: "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
+        verify: True
+    development:
+        verify: False
+    ganache-local:
+        verify: False

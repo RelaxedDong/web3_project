@@ -82,3 +82,7 @@ brownie accounts delete donghao
 
 # import 
 brownie无法识别npm安装的三方包
+
+# networks
+创建网络：
+`brownie networks add Ethereum ganache-local host=http://127.0.0.1:8545`
